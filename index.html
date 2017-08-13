@@ -7,8 +7,8 @@
    <body>
       <header class="main-header">
          <nav class="nav">
-            <a class="main-header-log"> 
-            <img class="image_logo" src="#" alt="Логотип Седона">
+            <a class="logo"> 
+            <img class="image-logo" src="#" alt="Логотип Седона">
             </a>  
             <ul class="site-navigation">
                <li><a href="#">информация</a></li>
@@ -27,42 +27,43 @@
             <p class="text-mountains">sedona</p>
             <img src="#" alt="гранд каньон">
          </section>
-         <section class="text-description">
+         <section class="text-decoration">
             <h3 class="description-city">седона-небольшой городок в аризоне, заслуживающий большего</h3>
             <p class="text-item">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
          </section>
          <section class="original">
-            <h3 class="original-text">настоящий городок</h3>
-            <p class="original-item"><span>-№1-</span>седона - не аттракцион для туристов там течет своя жизнь</p>
+            <h2 class="original-text">настоящий городок</h2>
+            <span>-№1-</span>
+            <p class="original-item">седона - не аттракцион для туристов там течет своя жизнь</p>
          </section>
-         <div class="image-city">
-            <!-- background -->
+         <div class="image-content">
+            <img src="#" alt="вид города">
          </div>
          <section class="city-group">
-            <ul class="list-group">
-               <li class="item-home">
+             <div class="list-group">
+               
                   <!-- icon -->
-                  <h3>жилье</h3>
+                  <h2>жилье</h2>
                   <p>рекомендуем пожить в настоящем мотеле, все как в кино</p>
-               </li>
-               <li class="item-food">
+             </div>
+               <div class="list-group">
                   <!-- icon -->
-                  <h3>еда</h3>
+                  <h2>еда</h2>
                   <p>всегда заказывайте настоящий бургер, вы не разочаруетесь</p>
-               </li>
-               <li class="item-souvenirs">
+               </div>
+               <div class="list-group">
                   <!-- icon -->
-                  <h3>сувениры</h3>
+                  <h2>сувениры</h2>
                   <p>не только китайского, но и местного производства</p>
-               </li>
-            </ul>
+               </div>
          </section>
-         <div>
-            <!-- background -->
+         <div class="image-content">
+            <img src="#" alt="вид гор">
          </div>
-         <section class="sight">
-            <h3 class="sight-text">там есть мост дьявола</h3>
-            <p class="sight-item"><span>-№2-</span>да, по нему можно пройти! если конечно вы осмелитесь</p>
+         <section class="original">
+            <h2 class="original-text">там есть мост дьявола</h2>
+            <span>-№2-</span> 
+            <p class="original-item">да, по нему можно пройти! если конечно вы осмелитесь</p>
          </section>
          <section class="features">
             <ul class="feature-list">
@@ -86,20 +87,25 @@
                </li>
             </ul>
          </section>
-         <section class="interesting">
-            <h2 class="visually-hidden">интересно</h2>
+         <section class="text-decoration">
+            <h3 class="visually-hidden">интересно</h3>
             <b>заинтересовались?</b>
             <p>укажите предпологаемые даты поездки, и мы покажем вам 
                лучшие предложения гостиниц в седоне
             </p>
+            <a class="search-hotels" href="#">поиск гостиницы в седоне</a>
          </section>
          <section class="map">
             <h2 class="visually-hidden">карта</h2>
             <!-- map -->
+            <form class="filter-search" action="https://echo.htmlacademy.ru" 
+            method="post">
+         </form>
+            
          </section>
       </main>
       <footer class="main-footer">
-         <p class="footer-contact"><a href="#">#visitsedona</a></p>
+          <div class="footer-contact"><a href="#">#visitsedona</a></div>
          <div class="footer-social">
             <ul>
                <li><a class="social-button" href="#">твиттер</a></li>
@@ -112,11 +118,5 @@
             <a href="https://htmlacademy.ru"><img src="#" alt="copyright-logo"></a>
          </p>
       </footer>
-      <section class="search">
-         <h2>Поиск гостиницы в седоне</h2>
-         <form class="filter-search" action="https://echo.htmlacademy.ru" 
-            method="post">
-         </form>
-      </section>
-   </body>
+    </body>
 </html>
