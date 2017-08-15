@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Каталог</title>
+   </head>
+   <body>
+      <header class="main-header">
+         <nav class="nav">
+            <a href="index.html" class="logo"> 
+              <img class="image-logo" src="#" alt="Логотип Седона">
+            </a>  
+            <ul class="site-navigation">
+               <li><a href="#">информация</a></li>
+               <li><a href="#">фото и видео</a></li>
+               <li><a href="#">карта штата</a></li>
+               <li><a href="#">гостиницы</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main class="container">
+         <section class="filters">
+            <h2 class="class=visually-hidden">фильтр отелей</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+               <fieldset>
+                  <legend>инфраструктура:</legend>
+                  <ul>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input 
+                           filter-input-checkbox" type="checkbox" name="pool" checked>
+                        бассейн
+                     </li>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input 
+                           filter-input-checkbox" type="checkbox" name="parcing">
+                        парковка
+                     </li>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input 
+                           filter-input-checkbox" type="checkbox" name="wi-fi">
+                        wi-fi
+                     </li>
+                  </ul>
+               </fieldset>
+               <fieldset>
+                  <legend>тип жилья:</legend>
+                  <ul>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input 
+                           filter-input-checkbox" type="checkbox" name="hotel" checked>
+                        гостиница
+                     </li>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input 
+                           filter-input-checkbox" type="checkbox" name="hotels" checked>
+                        мотель
+                     </li>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input 
+                           filter-input-checkbox" type="checkbox" name="apartments" checked>
+                        апартаменты
+                     </li>
+                  </ul>
+               </fieldset>
+               <fieldset>
+                  <legend>стоимость в сутки:</legend>
+                  <input class="visually-hidden filter-input 
+                     filter-input-checkbox" type="range" min="0" max="3000" step="1">
+               </fieldset>
+               <button type="submit" class="filter-button button">показать</button>
+            </form>
+         </section>
+         <section class="sort-list">
+            <div class="sort-list-search">
+               <span>найдено:3 сортировка:</span>
+            </div>
+            <ul class="sort-list-name">
+               <li><a href="#">по цене</a></li>
+               <li><a href="#">по типу</a></li>
+               <li><a href="#">по рейтингу</a></li>
+            </ul> 
+            <ul class="sort-list-btn">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+         </section>
+         <section class="hotels-catalog">
+           <h2 class="class-visualy-hidden">список отелей</h2>     
+            <article class="catalog-item">
+                <div class="catalog-item-image">
+                    <img src="#" alt="amarata resort & spa">
+                </div>
+                <div class="catalog-item-price" > 
+                   <h1 class="catalog-item-title">
+                     <a href="#">amarata resort &amp; spa</a>
+                   </h1>
+                   <div class="catalog-item-details">
+                   <span>гостиница</span>
+                   <a class="button-read" href="#">подробнее</a>
+                   </div>
+                   <div class="catalog-item-booking">
+                   <span>от 4000 р.</span>     
+                   <a class="button-bookit" href="#">забронировать</a>
+                   </div>
+                </div>
+                <div class="catalog-item-reyting">
+                    <img src="#" alt="рейтинг">
+                    <p>рейтинг:8.5</p>
+                </div>
+            </article>
+            <article class="catalog-item">
+                  <div class="catalog-item-image">
+                       <img src="#" alt="desert quailinn">
+                  </div>
+                  <div class="catalog-item-price">
+                     <h1 class="catalog-item-title">
+                       <a href="#">desert quailinn </a>
+                     </h1>
+                     <div class="catalog-item-details">
+                       <span>мотель</span>
+                       <a class="button-read" href="#">подробнее</a>
+                     </div>
+                     <div class="catalog-item-booking">
+                       <span>от 3000 р.</span>
+                       <a class="button-bookit" href="#">забронировать</a>
+                     </div>
+                  </div>
+                  <div class="catalog-item-reyting">
+                      <img src="#" alt="рейтинг">
+                      <p>рейтинг:8.9</p>
+                  </div>
+             </article>
+             <article class="catalog-item">
+                  <div class="catalog-item-image">
+                       <img src="#" alt="villas at poco diablo">
+                  </div>
+                  <div class="catalog-item-price">
+                     <h1 class="catalog-item-title">
+                       <a href="#">villas at poco diablo</a>
+                     </h1>
+                     <div class="catalog-item-details">
+                       <span>апартаменты</span>
+                       <a class="button-read" href="#">подробнее</a>
+                     </div>
+                     <div class="catalog-item-booking">
+                       <span>от 2000 р.</span>     
+                       <a class="button-bookit" href="#">забронировать</a>
+                     </div>
+                 </div>
+                  <div class="catalog-item-reyting">
+                      <img src="#" alt="рейтинг">
+                      <p>рейтинг:9.2</p>
+                  </div>
+             </article>
+         </section>
+      </main>
+      <footer class="main-footer">
+         <div class="footer-contact">
+             <a href="#">#visitsedona</a></div>
+         <div class="footer-social">
+            <ul>
+               <li><a class="social-button" href="#">твиттер</a></li>
+               <li><a class="social-button" href="#">фейсбук</a></li>
+               <li><a class="social-button" href="#">ютуб</a></li>
+            </ul>
+         </div>
+         <p class="footer-copyright">
+            <b>website by</b>
+            <a href="https://htmlacademy.ru"><img src="#" alt="copyright-logo"></a>
+         </p>
+      </footer>
+   </body>
+</html>
