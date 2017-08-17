@@ -8,8 +8,20 @@ body {
 
 .text-decoration h2 {
     font-size: 21px;
-    line-height: 26px;
 }
 
+.original h2 {
+    font-size: 26px;
+    /*color: #ffffff;*/
+}
 
+.city-group h2 {
+    font-size: 26px;
+}
     
+.original h2 {
+    font-size: 26px;
+    /*color: #ffffff;*/
+    
+    
+}
