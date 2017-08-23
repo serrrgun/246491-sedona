@@ -1,27 +1,294 @@
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url(fonts/pt_sans-bold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url(fonts/pt_sans-regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
-    color: #000000;
     font-weight: bold;
-    font-family: PT Sans;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
 }
 
-.text-decoration h2 {
-    font-size: 21px;
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rec(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
-.original h2 {
-    font-size: 26px;
-    /*color: #ffffff;*/
+a {
+  text-decoration: none;
 }
 
-.city-group h2 {
-    font-size: 26px;
+.site-navigation  {
+   background-color: #ffffff;
+   list-style: none;
 }
-    
-.original h2 {
-    font-size: 26px;
-    /*color: #ffffff;*/
-    
-    
+
+.site-navigation a {
+  color: #000000;
 }
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #cacaca;
+}
+/* активная страница незнаю что делать */
+.site-navigation a:active {
+  color: #766357;
+}
+.title-text {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.title-text
+.description-city {
+  font-size: 21px;
+  text-align: center;
+}
+
+.title-text
+.text-item {
+  text-align: center;
+  font-weight: normal;
+}
+
+.original {
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.city-group {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.features {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.original-text {
+  font-size: 21px;
+}
+
+.original-number {
+  font-weight: normal;
+}
+
+.original-item {
+  font-weight: normal;
+}
+
+.text-decoration {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.text-decoration b {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-decoration p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.text-decoration a {
+  color: #ffffff;
+  font-size: 21px;
+  background-color: #766357;
+}
+
+.text-decoration a:hover {
+  background-color: #604e43;
+}
+
+.text-decoration a:focus {
+  background-color: #503e33;
+}
+.filter-search {
+  background-color: #ffffff;
+}
+
+.filter-search input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.filter-search input:hover {
+  background-color: #ebebeb;
+}
+
+.filter-search input:focus {
+  background-color: #ffffff;
+}
+
+.filter-search a {
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.filter-search a:hover {
+  background-color: #669ec0
+}
+
+.filter-search a:focus {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: #f9fbf6;
+}
+
+.footer-contact a {
+  font-size: 21px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright{
+  text-align: center;
+}
+
+.footer-copyright b {
+  font-weight: normal;
+}
+
+.footer-copiraight a {
+  /* svg пока не знаю как цвет менять*/
+}
+
+.filters {
+  /* чего то фон не подключается, буду разбираться*/
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.sort-list {
+  background-color: #fefefe;
+}
+
+.sort-list ul {
+  list-style: none;
+}
+
+.sort-list-name a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #d2d2d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-list-name a:hover {
+  color: #81b3d2;
+}
+
+.sort-list-name a:focus {
+  color: #000000;
+  border-bottom: none;
+}
+
+.hotels-catalog {
+  background-color: #fefefe;
+}
+
+
+.catalog-item-title {
+  font-size: 21px;
+ }
+
+.catalog-item-title a {
+  color: #000000;
+}
+
+.catalog-item-title a:hover {
+  color: #81b3d2;
+}
+
+.catalog-item-title a:focus {
+  color: #cacaca;
+}
+
+.catalog-item-price span {
+  font-weight: normal;
+}
+
+.button-read {
+  color: #ffffff;
+  background-color: #81b3d2
+}
+
+.button-read:hover {
+  background-color: #669ec0;
+}
+
+.button-read:focus {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.button-bookit {
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.button-bookit:hover {
+  background-color: #604e43;
+}
+
+.button-bookit:focus {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+
+
+
+
+
+
+
