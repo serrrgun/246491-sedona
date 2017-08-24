@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'pt_sansbold';
+    font-family: "PT Sans";
     src: url(fonts/pt_sans-bold.woff2) format('woff2');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
-    font-family: 'pt_sansregular';
+    font-family: "PT Sans";
     src: url(fonts/pt_sans-regular.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -55,7 +55,7 @@ a {
   color: #cacaca;
 }
 /* активная страница незнаю что делать */
-.site-navigation a:active {
+.site-navigation a.active-menu {
   color: #766357;
 }
 .title-text {
