@@ -76,7 +76,7 @@ a {
   font-weight: normal;
 }
 
-.original {
+.original  {
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
@@ -125,6 +125,8 @@ a {
   color: #ffffff;
   font-size: 21px;
   background-color: #766357;
+  height: 88px;    
+  line-height: 4;   
 }
 
 .text-decoration a:hover {
@@ -203,7 +205,7 @@ a {
 }
 
 .filters {
-  /* чего то фон не подключается, буду разбираться*/
+  
   background-image: url(../img/background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -286,6 +288,180 @@ a {
   color: #928a85;
   background-color: #503e33;
 }
+
+
+/* сетки */
+
+body,
+html {
+    min-width: 1280px;
+    min-height: 2760px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 0px;  
+    /* временно */
+   min-height: 60px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* временно */
+    min-height: 60px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    /* временно */
+    min-height: 60px;
+}
+
+.logo {
+    order: 1;
+    position: absolute;
+}
+
+
+.image-mountains {
+    display: flex;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    width: 576px;
+    padding: 60px 312px;
+    margin-bottom: 0;
+}
+
+.original {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    
+    width:  280px; 
+    
+    padding-top: 45px;
+    padding-left: 55px;
+    
+}
+
+.image-content{
+    display: flex;
+}
+
+
+.city-group {
+    display: flex;
+    justify-content: space-between
+}
+
+.list-group {
+    padding-right: 72px;
+    padding-top: 58px;
+    padding-left: 72px;
+    padding-bottom: 86px;
+    width: 260px;
+    
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item {
+    padding-left: 94px ;
+    padding-top: 46px  ;
+    padding-bottom: 62px ;
+    padding-right: 94px ;
+    
+    width: 213px;
+}
+
+.text-decoration {
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 312px ;
+    padding-top: 52px;
+    padding-right: 312px;
+    
+    width: 576px;
+    /* временно */
+    min-height: 200px;
+}
+
+.map {
+    display: flex;
+}
+
+
+}
+
+.main-footer {
+   display: flex;
+    
+    list-style: none;
+   
+
+}
+
+.footer-contact{
+    width: 150px;
+}
+
+.footer-social{
+    width: 160px;
+}
+
+.footer-copyright{
+   width: 241px;
+}
+
+
+/* page hotel */
+
+.filters {
+    
+    /* временно */
+    min-height: 218px;
+}
+
+.sort-list {
+    display: flex;
+     
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+
+
+
+
+
+    
 
 
 

@@ -8,7 +8,7 @@
    </head>
    <body>
       <header class="main-header">
-         <nav class="nav">
+         <nav class="nav container">
             <h2 class="visually-hidden">навигация сайта</h2>
             <a class="logo">
             <img class="image-logo" src="img/logo.png" width="138"
@@ -32,26 +32,28 @@
             <p class="text-item">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
          </section>
          <section class="original">
-            <h2 class="original-text">настоящий городок</h2>
-            <span class="original-number"> &#8211 №1 &#8211 </span>
-            <p class="original-item">седона - не аттракцион для туристов там течет своя жизнь</p>
+            <div class="text-content">
+              <h2 class="original-text">настоящий городок</h2>
+              <span class="original-number"> &#8211 №1 &#8211 </span>
+              <p class="original-item">седона - не аттракцион для туристов там течет своя жизнь</p>
+             </div>
             <div class="image-content">
               <img src="img/city-photo.jpg" alt="вид города" width="800" height="256">
             </div>
          </section>
          <section class="city-group">
              <div class="list-group">
-                  <!-- icon -->
+                  <img src="img/icon-1.svg" alt="жилье">
                   <h2 class="original-text">жилье</h2>
                   <p class="original-item">рекомендуем пожить в настоящем мотеле, все как в кино</p>
              </div>
              <div class="list-group">
-                  <!-- icon -->
+                  <img src="img/icon-2.svg" alt="еда">
                   <h2 class="original-text">еда</h2>
                   <p class="original-item">всегда заказывайте настоящий бургер, вы не разочаруетесь</p>
              </div>
              <div class="list-group">
-                  <!-- icon -->
+                  <img src="img/icon-3.svg" alt="сувениры">
                   <h2 class="original-text">сувениры</h2>
                   <p class="original-item">не только китайского, но и местного производства</p>
              </div>
@@ -60,9 +62,11 @@
            <div class="image-content">
              <img src="img/panorama-photo.jpg" alt="вид гор" width="800" height="256">
            </div>
-            <h2 class="original-text">там есть мост дьявола</h2>
-            <span class="original-number">&#8211 №2 &#8211</span>
-            <p class="original-item">да, по нему можно пройти! если конечно вы осмелитесь</p>
+           <div class="text-content">
+              <h2 class="original-text">там есть мост дьявола</h2>
+              <span class="original-number">&#8211 №2 &#8211</span>
+              <p class="original-item">да, по нему можно пройти! если конечно вы осмелитесь</p>
+            </div>    
          </section>
          <section class="features">
             <div class="feature-item">
@@ -97,8 +101,9 @@
          </section>
          <section class="map">
             <h2 class="visually-hidden">карта</h2>
-            <img src="img/map.jpg" alt="карта" width="1200" height="590">
+            <img src="img/map.jpg" alt="карта" width="1200" height="475">
                <h2 class="visually-hidden">форма поиска</h2>
+               <!--
                <form class="filter-search" action="https://echo.htmlacademy.ru"
                method="post">
                <div class="arrival-date">
@@ -121,9 +126,11 @@
                </div>
                <a href="#">найти</a>
             </form>
+            -->
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer container">
+        
          <div class="footer-contact"><a href="#">#visitsedona</a></div>
          <div class="footer-social">
             <ul>
@@ -136,6 +143,7 @@
             <b>website by</b>
             <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="copyright-logo"></a>
          </p>
+        
       </footer>
     </body>
 </html>
