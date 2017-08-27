@@ -414,20 +414,25 @@ html {
     display: flex;
 }
 
-
+.filter-search {
+   display: none;
+   position: absolute;
+   left: 400px;
 }
 
-.footer-content  {
-   display: flex;
 
 
-   margin: 0;
-   padding: 0;
 
+.main-footer
+{
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
-
 .footer-contact{
-    width: 150px;
+   width: 145px;
+   margin-right: 248px;
+   margin-left: 140px;
 }
 
 .footer-social{
@@ -435,7 +440,8 @@ html {
 }
 
 .footer-copyright{
-   width: 241px;
+   width: 240px;
+   margin-left: 210px;
 }
 
 
@@ -520,6 +526,11 @@ html {
   width: 142px;
   text-align: center;
   margin-top: 8px;
+}
+
+.catalog-item-reyting {
+  /* пока так другого свойства не знаю */
+  margin-left: 520px;
 }
 
 
