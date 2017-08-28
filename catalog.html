@@ -25,49 +25,51 @@
          <section class="filters">
             <h2 class="visually-hidden">фильтр отелей</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-               <fieldset class="filter-option">
-                  <legend>инфраструктура:</legend>
+              <div class="filter-option-column-1">
+                <legend>инфраструктура:</legend>
                     <label>
-                        <input class="visually-hidden filter-input
+                        <input class="vsually-hidden filter-input
                            filter-input-checkbox" type="checkbox" name="pool" checked>
                         бассейн
                     </label>
                     <label>
-                        <input class="visually-hidden filter-input
+                        <input class="vsually-hidden filter-input
                            filter-input-checkbox" type="checkbox" name="parcing">
                         парковка
                     </label>
                     <label>
-                        <input class="visually-hidden filter-input
+                        <input class="vsually-hidden filter-input
                            filter-input-checkbox" type="checkbox" name="wi-fi">
                         wi-fi
                     </label>
-               </fieldset>
-               <fieldset class="filter-option">
-                  <legend>тип жилья:</legend>
+              </div>
+              <div class="filter-option-column-2">
+                 <legend>тип жилья:</legend>
                      <label>
-                        <input class="visually-hidden filter-input
+                        <input class="vsually-hidden filter-input
                            filter-input-checkbox" type="checkbox" name="hotel" checked>
                         гостиница
                      </label>
                      <label>
-                        <input class="visually-hidden filter-input
+                        <input class="vsually-hidden filter-input
                            filter-input-checkbox" type="checkbox" name="hotels" checked>
                         мотель
                      </label>
                      <label>
-                        <input class="visually-hidden filter-input
+                        <input class="vsually-hidden filter-input
                            filter-input-checkbox" type="checkbox" name="apartments" checked>
                         апартаменты
                      </label>
-               </fieldset>
-               <fieldset>
-                  <legend>стоимость в сутки (P):</legend>
-                  <input class="visually-hidden filter-input
+               </div>
+               <div class="filter-option-column-3">
+                   <legend>стоимость в сутки (P):</legend>
+                   <input class="visually-hidden filter-input
                      filter-input-checkbox" type="range" min="0" max="3000" step="1">
-               </fieldset>
-               <button type="submit" class="filter-button button">показать</button>
+                     <button type="submit" class="filter-button button">показать</button>
+               </div>
+
             </form>
+
          </section>
          <section class="sort-list">
             <h2 class="visually-hidden">сортировка поиска</h2>
