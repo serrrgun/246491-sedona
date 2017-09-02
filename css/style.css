@@ -38,6 +38,18 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background: #fff;
+  box-shadow: 0 0 40px 0 #dbdbdb;
+}
+
 .site-navigation  {
    background-color: #ffffff;
    list-style: none;
@@ -76,7 +88,7 @@ a {
   font-weight: normal;
 }
 
-.original {
+.original  {
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
@@ -95,6 +107,7 @@ a {
 
 .original-text {
   font-size: 21px;
+  line-height: 21px;
 }
 
 .original-number {
@@ -103,6 +116,7 @@ a {
 
 .original-item {
   font-weight: normal;
+  line-height: 21px;
 }
 
 .text-decoration {
@@ -125,6 +139,8 @@ a {
   color: #ffffff;
   font-size: 21px;
   background-color: #766357;
+  height: 88px;
+  line-height: 4;
 }
 
 .text-decoration a:hover {
@@ -186,28 +202,48 @@ a {
   list-style: none;
 }
 
-.social-button {
-  color: #ffffff;
+
+.social-button:focus path{
+  fill: #88b6d1;
+  background: #5496bd;
+}
+
+.social-button:hover{
+  background: #669ec0;
 }
 
 .footer-copyright{
   text-align: center;
 }
 
+.footer-copyright a:hover path {
+    fill: #81b3d2;
+}
+
+.footer-copyright a:focus path  {
+    fill: #bdbbbc;
+}
+
 .footer-copyright b {
   font-weight: normal;
 }
 
-.footer-copiraight a {
-  /* svg пока не знаю как цвет менять*/
-}
 
 .filters {
-  /* чего то фон не подключается, буду разбираться*/
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #ffffff;
   background-image: url(../img/background.jpg);
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 0 0;
+}
+
+.filter-button{
+
+  border: 3px solid #ffffff;
+
 }
 
 .sort-list {
@@ -285,6 +321,655 @@ a {
 .button-bookit:focus {
   color: #928a85;
   background-color: #503e33;
+}
+
+
+/* сетки */
+
+body,
+html {
+
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* меню готово, только переполнение не работает
+как нужно!! с псевдоклассами игрался, не получилось!*/
+
+main-header {
+ position: relative;
+ margin: 0;
+ padding: 0;    
+}
+
+
+.site-navigation {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;    
+ min-height: 56px;    
+ margin: 0;
+ padding: 0;
+}
+
+.menu-items {
+ text-align: center;
+ width: 20%;    
+}
+
+.menu-items:nth-child(2) {
+margin-right: 20%;
+}
+
+  
+.logo {
+ position: absolute;
+ 
+}
+
+/*-----*/
+
+/* главная картинка, не знаю нужен ли ей флекс,
+думаю, что нет. высота и ширина задана в html*/
+
+.image-mountains {
+  line-height: 0;
+}
+
+/*-----*/
+
+/* блок с текстом тоже переделал, перемерил */
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title-text h2 {
+  margin: 0;
+  padding: 0 365px;
+  padding-top: 60px;
+  padding-bottom: 29px;
+}
+
+.title-text p {
+  margin: 0;
+  padding: 0 353px;
+  padding-bottom: 48px;
+}
+
+/*-----*/
+
+.original {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.superiority-one h2 {
+  margin: 0;
+  padding: 0;
+  margin: 0 133px;
+  margin-top: 46px;
+
+}
+
+.superiority-one span {
+  margin: 20px auto;
+}
+
+.superiority-one p {
+  margin: 0;
+  padding: 0;
+  margin: 0 55px;
+  margin-bottom: 42px;
+}
+
+.image-content{
+    line-height: 0;
+}
+
+.superiority-two {
+  display: flex;
+  flex-direction: column;
+ }
+
+.superiority-two h2{
+  margin: 0;
+  padding: 0;
+  margin: 0 120px;
+  margin-top: 46px;
+
+}
+
+.superiority-two span {
+  margin: 20px auto;
+
+}
+
+.superiority-two p {
+  margin: 0 45px;
+  margin-bottom: 46px;
+}
+
+.city-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.list-group {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+
+}
+
+.home h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 0 160px;
+  padding-top: 160px;
+  margin-bottom: 25px;
+
+
+}
+
+.home h2::before {
+  content: url(../img/icon-1.svg);
+  position: absolute;
+  display: block;
+  bottom: 60px;
+}
+
+.home p {
+  padding: 0;
+  margin: 0;
+  padding: 0 70px;
+  margin-bottom: 82px;
+}
+
+.food h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 0 160px;
+  padding-top: 160px;
+  margin-bottom: 25px;
+}
+
+.food h2::before {
+  content: url(../img/icon-3.svg);
+  position: absolute;
+  display: block;
+  bottom: 60px;
+}
+
+.food p {
+  padding: 0;
+  margin: 0;
+  padding: 0 54px;
+  margin-bottom: 82px;
+}
+
+.souvenirs h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 0 160px;
+  padding-top: 160px;
+  margin-bottom: 25px;
+
+}
+
+.souvenirs h2::before {
+  content: url(../img/icon-2.svg);
+  position: absolute;
+  display: block;
+  bottom: 60px;
+  left: 175px;
+
+}
+
+.souvenirs p {
+  padding: 0;
+  margin: 0;
+  padding: 0 60px;
+  margin-bottom: 82px;
+}
+
+
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item h2{
+  margin: 0;
+  padding: 0;
+  margin: 0 130px;
+  margin-top: 46px;
+
+}
+
+.feature-item
+ span {
+  margin: 20px auto;
+}
+
+.feature-item p {
+  margin: 0;
+  padding: 0;
+  margin: 0 55px;
+  margin-bottom: 63px;
+}
+
+.text-decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.text-decoration b {
+  margin-top: 52px;
+  margin-bottom: 28px;
+}
+
+.text-decoration p {
+  margin: 0 270px;
+  margin-bottom: 50px;
+}
+
+.text-decoration a {
+  margin: 0;
+  padding: 0;
+  padding: 0 135px;
+}
+
+
+
+.map {
+  position: relative;   
+  display: flex;
+  margin-bottom: 0;    
+
+}
+
+.filter-search {
+   
+   position: absolute;
+   left:320px;
+   display: flex;
+   flex-direction: column;
+    margin: 0;
+    padding: 0;
+  
+   padding: 55px 50px;
+}
+
+.arrival-date,
+.date-departure {
+    position: relative
+}
+
+
+.arrival-date input, 
+.date-departure input {
+    
+    width: 297px;
+    height: 38px;
+    font-family: "PT sans bold", Arival, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 40px; 
+    margin-bottom: 30px;
+    border: none;
+    background: #f2f2f2;
+}
+
+
+.arrival-date
+.calendar {
+    position: absolute;
+    top: 5px;
+    left: 415px
+    
+}
+
+.date-departure 
+.calendar {
+    position: absolute;
+    left: 415px;
+    top: 5px;
+}
+
+.arrival-date input {
+    margin-left: 20px;
+    
+}
+
+.date-departure input {
+    margin-left: 17px;
+}
+
+.choice-quantity {
+    display:  flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+}
+
+.adults input,
+.children input {
+    width: 115px;
+    height: 38px;
+    text-align: center;
+}
+
+.adults, 
+.children {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.adults input {
+    margin-left: 40px;
+}
+
+.children input {
+    margin-left: 20px;
+}
+
+.adults {
+    margin-right: 50px;
+}
+
+ .adults 
+.minus {
+    position: absolute;
+    left: 115px;
+    top: 0px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    color: #a9a9a9;
+    text-align: center;
+    line-height: inherit;
+    background-color: #f2f2f2;
+    
+        
+    
+}
+
+.children
+.minus {
+    position: absolute;
+    left: 63px;
+    top: 0px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    text-align: center;
+    line-height: inherit;
+}
+
+.adults 
+.plus {
+    position: absolute;
+    left: 190px;
+    top: 0px;
+    width: 10px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    color: #a9a9a9;
+    text-align: center;
+    line-height: inherit;
+    background-color: #f2f2f2;
+}
+
+.children
+.plus {
+    position: absolute;
+    left: 140px;
+    top: 0px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    color: #a9a9a9;
+    text-align: center;
+    line-height: inherit;
+    background-color: #f2f2f2;
+}
+
+.search-bottom {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 155px;
+}
+
+
+
+
+
+
+
+.main-footer{
+  display: flex;
+ 
+  align-items: center;    
+  padding: 0;
+      
+}
+
+.footer-contact{
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 50px 125px;
+  width: 400px;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 152px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-social{
+  margin: 35px 120px;
+  margin-left: 0px;     
+  width: 400px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px ;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.footer-copyright{
+  display: flex;
+  align-items: center;    
+  margin: 40px 0;
+  margin-right: 100px;
+  width: 400px;
+}
+
+.footer-copyright a {
+    padding-left: 10px;
+}
+
+
+
+
+/* page hotel */
+
+.filters {
+
+    /* временно */
+    min-height: 218px;
+}
+
+.sort-list {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sort-list-search {
+  width: 241px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sort-list-name {
+  display: flex;
+  justify-content: space-between;
+  width: 288px;
+  padding-top: 38px;
+  padding-bottom: 32px;
+}
+
+.hotels-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item {
+  display: flex;
+  padding: 30px 72px;
+
+  margin: 0;
+}
+
+.catalog-item-image {
+   margin-right: 30px;
+}
+
+.catalog-details {
+  display: flex;
+}
+
+
+.catalog-item-price h1 {
+   padding: 0;
+   margin: 0;
+}
+
+.catalog-item-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.catalog-item-booking {
+  display: flex;
+  flex-direction: column;
+
+   margin-top: 5px;
+}
+
+.catalog-item-details a {
+  text-align: center;
+  width: 110px;
+  margin-top: 8px;
+}
+
+.catalog-item-booking a {
+  width: 142px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.catalog-item-reyting {
+  /* пока так другого свойства не знаю */
+  margin-left: 520px;
+}
+
+.filter {
+  display: flex;
+  padding: 27px 73px;
+}
+
+.filter-option-column-1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 105px;
+}
+
+
+
+.filter-option-column-2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 500px;
+}
+
+.filter-option-column-3 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.filter-button {
+   width: 150px;
+   margin-top: 95px;
+   display: inline-block;
+
+}
+.filter input {
+  margin-top: 25px;
 }
 
 
