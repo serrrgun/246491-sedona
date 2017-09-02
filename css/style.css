@@ -38,6 +38,18 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background: #fff;
+  box-shadow: 0 0 40px 0 #dbdbdb;
+}
+
 .site-navigation  {
    background-color: #ffffff;
    list-style: none;
@@ -95,6 +107,7 @@ a {
 
 .original-text {
   font-size: 21px;
+  line-height: 21px;
 }
 
 .original-number {
@@ -103,6 +116,7 @@ a {
 
 .original-item {
   font-weight: normal;
+  line-height: 21px;
 }
 
 .text-decoration {
@@ -188,21 +202,32 @@ a {
   list-style: none;
 }
 
-.social-button {
-  color: #ffffff;
+
+.social-button:focus path{
+  fill: #88b6d1;
+  background: #5496bd;
+}
+
+.social-button:hover{
+  background: #669ec0;
 }
 
 .footer-copyright{
   text-align: center;
 }
 
+.footer-copyright a:hover path {
+    fill: #81b3d2;
+}
+
+.footer-copyright a:focus path  {
+    fill: #bdbbbc;
+}
+
 .footer-copyright b {
   font-weight: normal;
 }
 
-.footer-copiraight a {
-  /* svg пока не знаю как цвет менять*/
-}
 
 .filters {
   font-size: 16px;
@@ -304,7 +329,7 @@ a {
 body,
 html {
 
-    min-height: 2760px;
+
 }
 
 .container {
@@ -313,92 +338,225 @@ html {
     padding: 0 10px;
 }
 
-.main-header {
-  margin-bottom: 0px;
-  margin-right: ;
+/* меню готово, только переполнение не работает
+как нужно!! с псевдоклассами игрался, не получилось!*/
+
+main-header {
+ position: relative;
+ margin: 0;
+ padding: 0;    
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-
-}
 
 .site-navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;    
+ min-height: 56px;    
+ margin: 0;
+ padding: 0;
 }
 
-.site-navigation li {
-
-  padding: 15px 0;
-
+.menu-items {
+ text-align: center;
+ width: 20%;    
 }
 
+.menu-items:nth-child(2) {
+margin-right: 20%;
+}
+
+  
 .logo {
-    order: 1;
-    position: absolute;
-
+ position: absolute;
+ 
 }
 
+/*-----*/
+
+/* главная картинка, не знаю нужен ли ей флекс,
+думаю, что нет. высота и ширина задана в html*/
 
 .image-mountains {
-    display: flex;
+  line-height: 0;
 }
+
+/*-----*/
+
+/* блок с текстом тоже переделал, перемерил */
 
 .title-text {
-    display: flex;
-    flex-direction: column;
-    width: 576px;
-    padding: 60px 312px;
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
+.title-text h2 {
+  margin: 0;
+  padding: 0 365px;
+  padding-top: 60px;
+  padding-bottom: 29px;
+}
+
+.title-text p {
+  margin: 0;
+  padding: 0 353px;
+  padding-bottom: 48px;
+}
+
+/*-----*/
+
 .original {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .text-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
 
-    width:  280px;
+.superiority-one h2 {
+  margin: 0;
+  padding: 0;
+  margin: 0 133px;
+  margin-top: 46px;
 
-    padding-top: 45px;
-    padding-left: 55px;
+}
 
+.superiority-one span {
+  margin: 20px auto;
+}
+
+.superiority-one p {
+  margin: 0;
+  padding: 0;
+  margin: 0 55px;
+  margin-bottom: 42px;
 }
 
 .image-content{
-    display: flex;
+    line-height: 0;
 }
 
+.superiority-two {
+  display: flex;
+  flex-direction: column;
+ }
+
+.superiority-two h2{
+  margin: 0;
+  padding: 0;
+  margin: 0 120px;
+  margin-top: 46px;
+
+}
+
+.superiority-two span {
+  margin: 20px auto;
+
+}
+
+.superiority-two p {
+  margin: 0 45px;
+  margin-bottom: 46px;
+}
 
 .city-group {
-    display: flex;
-    justify-content: space-between
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .list-group {
-    padding-right: 72px;
-    padding-top: 58px;
-    padding-left: 72px;
-    padding-bottom: 86px;
-    width: 260px;
+  margin: 0;
+  padding: 0;
+  width: 400px;
 
 }
+
+.home h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 0 160px;
+  padding-top: 160px;
+  margin-bottom: 25px;
+
+
+}
+
+.home h2::before {
+  content: url(../img/icon-1.svg);
+  position: absolute;
+  display: block;
+  bottom: 60px;
+}
+
+.home p {
+  padding: 0;
+  margin: 0;
+  padding: 0 70px;
+  margin-bottom: 82px;
+}
+
+.food h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 0 160px;
+  padding-top: 160px;
+  margin-bottom: 25px;
+}
+
+.food h2::before {
+  content: url(../img/icon-3.svg);
+  position: absolute;
+  display: block;
+  bottom: 60px;
+}
+
+.food p {
+  padding: 0;
+  margin: 0;
+  padding: 0 54px;
+  margin-bottom: 82px;
+}
+
+.souvenirs h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 0 160px;
+  padding-top: 160px;
+  margin-bottom: 25px;
+
+}
+
+.souvenirs h2::before {
+  content: url(../img/icon-2.svg);
+  position: absolute;
+  display: block;
+  bottom: 60px;
+  left: 175px;
+
+}
+
+.souvenirs p {
+  padding: 0;
+  margin: 0;
+  padding: 0 60px;
+  margin-bottom: 82px;
+}
+
+
 
 .features {
     display: flex;
@@ -406,60 +564,279 @@ html {
 }
 
 .feature-item {
-    padding-left: 94px ;
-    padding-top: 46px  ;
-    padding-bottom: 62px ;
-    padding-right: 94px ;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 0;
+  margin: 0;
+}
 
-    width: 213px;
+.feature-item h2{
+  margin: 0;
+  padding: 0;
+  margin: 0 130px;
+  margin-top: 46px;
+
+}
+
+.feature-item
+ span {
+  margin: 20px auto;
+}
+
+.feature-item p {
+  margin: 0;
+  padding: 0;
+  margin: 0 55px;
+  margin-bottom: 63px;
 }
 
 .text-decoration {
-    display: flex;
-    flex-direction: column;
-
-    padding-left: 312px ;
-    padding-top: 52px;
-    padding-right: 312px;
-
-    width: 576px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 
 }
 
+.text-decoration b {
+  margin-top: 52px;
+  margin-bottom: 28px;
+}
+
+.text-decoration p {
+  margin: 0 270px;
+  margin-bottom: 50px;
+}
+
+.text-decoration a {
+  margin: 0;
+  padding: 0;
+  padding: 0 135px;
+}
+
+
+
 .map {
-    display: flex;
+  position: relative;   
+  display: flex;
+  margin-bottom: 0;    
+
 }
 
 .filter-search {
-   display: none;
+   
    position: absolute;
-   left:323px;
+   left:320px;
+   display: flex;
+   flex-direction: column;
+    margin: 0;
+    padding: 0;
+  
+   padding: 55px 50px;
+}
 
+.arrival-date,
+.date-departure {
+    position: relative
+}
+
+
+.arrival-date input, 
+.date-departure input {
+    
+    width: 297px;
+    height: 38px;
+    font-family: "PT sans bold", Arival, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 40px; 
+    margin-bottom: 30px;
+    border: none;
+    background: #f2f2f2;
+}
+
+
+.arrival-date
+.calendar {
+    position: absolute;
+    top: 5px;
+    left: 415px
+    
+}
+
+.date-departure 
+.calendar {
+    position: absolute;
+    left: 415px;
+    top: 5px;
+}
+
+.arrival-date input {
+    margin-left: 20px;
+    
+}
+
+.date-departure input {
+    margin-left: 17px;
+}
+
+.choice-quantity {
+    display:  flex;
+}
+
+.adults input,
+.children input {
+    width: 115px;
+    height: 38px;
+    text-align: center;
+}
+
+.adults, 
+.children {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.adults input {
+    margin-left: 40px;
+}
+
+.children input {
+    margin-left: 20px;
+}
+
+.adults {
+    margin-right: 50px;
+}
+
+ .adults 
+.minus {
+    position: absolute;
+    left: 115px;
+    top: 0px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    color: #a9a9a9;
+    text-align: center;
+    line-height: inherit;
+    background-color: #f2f2f2;
+    
+        
+    
+}
+
+.children
+.minus {
+    position: absolute;
+    left: 63px;
+    top: 0px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    text-align: center;
+    line-height: inherit;
+}
+
+.adults 
+.plus {
+    position: absolute;
+    left: 190px;
+    top: 0px;
+    width: 10px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    color: #a9a9a9;
+    text-align: center;
+    line-height: inherit;
+    background-color: #f2f2f2;
+}
+
+.children
+.plus {
+    position: absolute;
+    left: 140px;
+    top: 0px;
+    border: none;
+    height: 40px;
+    width: 38px;
+    font-size: 30px;
+    color: #a9a9a9;
+    text-align: center;
+    line-height: inherit;
+    background-color: #f2f2f2;
 }
 
 
 
 
-.main-footer
-{
+
+
+
+.main-footer{
   display: flex;
-  align-items: center;
+ 
+  align-items: center;    
   padding: 0;
+      
 }
+
 .footer-contact{
-   width: 145px;
-   margin-right: 248px;
-   margin-left: 140px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 50px 125px;
+  width: 400px;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 152px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-social{
-    width: 160px;
+  margin: 35px 120px;
+  margin-left: 0px;     
+  width: 400px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px ;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
 .footer-copyright{
-   width: 240px;
-   margin-left: 210px;
+  display: flex;
+  align-items: center;    
+  margin: 40px 0;
+  margin-right: 100px;
+  width: 400px;
 }
+
+.footer-copyright a {
+    padding-left: 10px;
+}
+
+
 
 
 /* page hotel */
