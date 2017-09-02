@@ -686,6 +686,9 @@ margin-right: 20%;
 
 .choice-quantity {
     display:  flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
 }
 
 .adults input,
@@ -774,6 +777,12 @@ margin-right: 20%;
     text-align: center;
     line-height: inherit;
     background-color: #f2f2f2;
+}
+
+.search-bottom {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 155px;
 }
 
 
