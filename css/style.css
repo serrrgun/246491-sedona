@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "PT Sans";
     src: url(fonts/ptsansbold.woff) format('woff');
@@ -38,7 +40,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -146,6 +150,7 @@ margin-right: 20%;
 
 .image-mountains {
   line-height: 0;
+  background-color: #6c99c2;
 }
 
 /* ---------------------*/
@@ -171,7 +176,7 @@ margin-right: 20%;
 }
 
 .title-text h2 {
-  width: 575px;    
+  width: 575px;
   margin: 0;
   padding: 0 365px;
   padding-top: 60px;
@@ -238,6 +243,7 @@ margin-right: 20%;
 
 .image-content{
     line-height: 0;
+    background-color: #81b3d2;
 }
 
 /* ------------------ */
@@ -393,7 +399,7 @@ margin-right: 20%;
   padding: 0;
   margin: 0 130px;
   margin-top: 46px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .feature-item
@@ -706,6 +712,50 @@ margin-right: 20%;
   fill: #81b3d2;
 }
 
+@-webkit-keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  70%  {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  70%  {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.modal-hide {
+  display: none;
+}
+
+
 /*----------------------*/
 
 /* ---- ФУТЕР ---- */
@@ -725,6 +775,7 @@ margin-right: 20%;
 .footer-index {
   position: relative;
   margin-top: -120px;
+  opacity: 0.7;
 }
 
 .footer-contact{
@@ -972,11 +1023,12 @@ margin-right: 20%;
 }
 
 .price-controls label {
-  display: inline-block;
+  display: inline;
+
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 25px;
+  vertical-align: baseline;
 
   cursor: pointer;
 }
@@ -1091,9 +1143,11 @@ margin-right: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   margin: 0;
   padding: 0;
   padding: 31px 72px;
+  padding-bottom: 32px;
   background-color: #fefefe;
   border: 1px solid #e5e5e5;
 }
@@ -1116,8 +1170,11 @@ margin-right: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      
+  width: 940px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
 }
 
 .sort-result {
@@ -1132,8 +1189,7 @@ margin-right: 20%;
 }
 
 .sort-list ul {
-  width: 798px;   
-  padding-left: 51px;    
+  padding-left: 51px;
   list-style: none;
 }
 
@@ -1143,12 +1199,12 @@ margin-right: 20%;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          
+
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left:
+
 }
 
 .sort-list-name a {
@@ -1169,10 +1225,10 @@ margin-right: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;    
+  text-align: right;
   margin: 0;
   padding: 0;
-  margin-left: 0;
+
 }
 
 .sort-list-btn a {
@@ -1181,6 +1237,10 @@ margin-right: 20%;
 
 .sort-list-btn a path {
   fill: #cacaca;
+}
+
+.list-btn-active a path {
+  fill: #81b3d2;
 }
 .sort-list-btn a:hover path {
   fill: #3b3838;
@@ -1191,6 +1251,10 @@ margin-right: 20%;
 }
 
 .sort-list-btn a:active path {
+  fill: #81b3d2;
+}
+
+.sort-list-btn li:last-child path {
   fill: #81b3d2;
 }
 
@@ -1207,6 +1271,8 @@ margin-right: 20%;
    color: #bad3e5;
    border-bottom: none;
 }
+
+
 
 /*---------------*/
 
@@ -1230,12 +1296,22 @@ margin-right: 20%;
   display: flex;
   padding: 24px 72px;
   margin: 0;
-  border: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
+
+.catalog-item-price {
+  width: 264px;
+  margin: 0;
+  padding: 0;
+    }
 .catalog-item-image {
+   display: block;
+   width: 135px;
+   margin: 0;
    padding: 0;
    margin-right: 30px;
    margin-top: 3px;
+   background-color: #ffffff;
 }
 
 .catalog-details {
@@ -1293,7 +1369,7 @@ margin-right: 20%;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 520px;
+  margin-left: 515px;
 }
 
 .catalog-item-star {
@@ -1387,57 +1463,6 @@ margin-right: 20%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* page hotel */
 
 
 
