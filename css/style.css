@@ -469,7 +469,7 @@ margin-right: 20%;
 .text-decoration a {
   margin: 0;
   padding: 0 ;
-  width: 572px;
+  width: 570px;
   color: #ffffff;
   font-size: 21px;
   background-color: #766357;
@@ -498,6 +498,7 @@ margin-right: 20%;
   margin: 0;
   padding: 0;
   line-height: 0;
+  background: url(../img/map.jpg) no-repeat #ffffff;   
 }
 
 .hotels-search {
@@ -512,6 +513,8 @@ margin-right: 20%;
   padding: 55px;
   background-color: #ffffff;
   color: #000000;
+    
+  animation: bounce 1.5s;    
 }
 
 .hotels-search p {
@@ -713,46 +716,21 @@ margin-right: 20%;
 }
 
 @-webkit-keyframes bounce {
-  0%   {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
-  }
-  70%  {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  90%  {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  0% {
+    -webkit-transform: translateY(-100px);}
 }
 
-
 @keyframes bounce {
-  0%   {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
-  }
-  70%  {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  90%  {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  0% {
+    transform: translateY(-100px);}
 }
 
 .modal-hide {
   display: none;
+}
+
+.search-hotels {
+    animation: bounce 0.6s;
 }
 
 
@@ -769,13 +747,13 @@ margin-right: 20%;
           justify-content: flex-start;
   margin: 0;
   padding: 0;
-  background-color: #f9fbf6;
+  background-color: #ffffff;
 }
 
 .footer-index {
   position: relative;
   margin-top: -120px;
-  opacity: 0.7;
+  background-color: rgba(249,251,246, 0.7);
 }
 
 .footer-contact{
@@ -911,7 +889,7 @@ margin-right: 20%;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 119px;
+  margin-right: 120px;
   margin-bottom: 3px;
 
 }
@@ -1027,7 +1005,7 @@ margin-right: 20%;
 
 
   font-size: 14px;
-  line-height: 25px;
+  line-height: 30px;
   vertical-align: baseline;
 
   cursor: pointer;
@@ -1092,7 +1070,7 @@ margin-right: 20%;
   height: 4px;
 
   background: #ababab;
-  border: 10px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
           box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -1116,7 +1094,8 @@ margin-right: 20%;
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  margin-right: 98px;    
+  padding: 5px 30px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1149,7 +1128,7 @@ margin-right: 20%;
   padding: 31px 72px;
   padding-bottom: 32px;
   background-color: #fefefe;
-  border: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .sort-list-search {
@@ -1210,6 +1189,7 @@ margin-right: 20%;
 .sort-list-name a {
   margin-right: 35px;
   font-size: 12px;
+  font-weight: normal;
   line-height: 18px;
   color: #d2d2d2;
   border-bottom: 1px dotted #81b3d2;
@@ -1309,8 +1289,10 @@ margin-right: 20%;
    width: 135px;
    margin: 0;
    padding: 0;
+   line-height: 0;    
    margin-right: 30px;
-   margin-top: 3px;
+   margin-top: 5px;     
+   margin-bottom: 6px;
    background-color: #ffffff;
 }
 
@@ -1335,7 +1317,7 @@ margin-right: 20%;
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 5px;
-  margin-top: 4px;
+  margin: 5px 0 ;
 }
 
 .catalog-item-booking {
@@ -1346,7 +1328,7 @@ margin-right: 20%;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 4px;
+  margin: 5px 0;
 }
 
 .catalog-item-details a {
