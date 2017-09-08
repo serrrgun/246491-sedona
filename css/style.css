@@ -56,6 +56,10 @@ img {
   height: auto;
 }
 
+svg {
+    pointer-events: none;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -1316,8 +1320,8 @@ margin-right: 20%;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 5px;
   margin: 5px 0 ;
+  margin-right: 5px;
 }
 
 .catalog-item-booking {
