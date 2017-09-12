@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "PT Sans";
   src: url(fonts/ptsansbold.woff) format("woff");
@@ -133,10 +131,6 @@ main-header {
   color: #81b3d2;
 }
 
-.site-navigation a:focus {
-  color: #cacaca;
-}
-
 .site-navigation a:active {
   color: #cacaca;
 }
@@ -177,7 +171,7 @@ a.active-menu {
 }
 
 .title-text h2 {
-  width: 575px;
+  width: 445px;
   margin: 0;
   padding: 0 365px;
   padding-top: 60px;
@@ -398,8 +392,7 @@ a.active-menu {
   margin-bottom: 3px;
 }
 
-.feature-item
-span {
+.feature-item span {
   margin: 20px auto;
 }
 
@@ -483,12 +476,6 @@ span {
 }
 
 .text-decoration 
-.search-hotels:focus {
-  background-color: #503e33;
-  border: none;    
-}
-
-.text-decoration 
 .search-hotels:active {
   background-color: #503e33;
   border: none;    
@@ -519,7 +506,8 @@ span {
   padding: 55px;
   background-color: #ffffff;
   color: #000000;
-  animation: bounce 1.5s;    
+  -webkit-animation: bounce 1.5s;
+          animation: bounce 1.5s;    
 }
 
 .hotels-search p {
@@ -734,7 +722,8 @@ span {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-100px);}
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);}
 }
 
 .modal-hide {
@@ -742,7 +731,8 @@ span {
 }
 
 .search-hotels {
-    animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 
@@ -814,15 +804,19 @@ span {
   background-color: #81b3d2;
 }
 
-
-.social-button:focus path{
-  fill: #88b6d1;
-  background: #5496bd;
-}
-
 .social-button:hover {
-  background: #669ec0;
+  background-color: rgb(102, 158, 192);
 }
+
+.social-button:active {
+  background-color: rgb(84, 150, 189)   
+}
+
+.social-button:active path{
+  fill: rgba(255, 255, 255,0.3);
+}
+
+
 
 .footer-copyright {
   display: -webkit-box;
@@ -842,10 +836,6 @@ span {
 
 .footer-copyright a:hover path {
   fill: #81b3d2;
-}
-
-.footer-copyright a:focus path {
-  fill: #bdbbbc;
 }
 
 .footer-copyright a:active path {
@@ -946,7 +936,7 @@ input[type="checkbox"]:checked+label::after {
   cursor: pointer;    
 }
 
-input[type="checkbox"]:disabled:checked+label::after{
+input[type="checkbox"]:disabled:checked+label::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -969,7 +959,7 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .checkbox-wrapper {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 /* сложный фильтр */
@@ -1087,6 +1077,9 @@ input[type="checkbox"]:disabled+label::after {
 
 .range-toggle:hover {
   background: #1c4f80;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);    
 }
 
 .range-toggle-min {
@@ -1131,7 +1124,6 @@ input[type="checkbox"]:disabled+label::after {
   padding: 31px 72px;
   padding-bottom: 30px;
   background-color: #fefefe;
- 
 }
 
 .sort-list-search {
@@ -1194,6 +1186,16 @@ input[type="checkbox"]:disabled+label::after {
   border-bottom: 1px dotted #81b3d2;
 }
 
+.sort-list-name a:hover {
+  color: #bad3e5;
+  border-bottom: none;
+}
+
+.sort-list-name a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
 .sort-list-name
 .active-list-name {
   border-bottom: none;
@@ -1217,15 +1219,8 @@ input[type="checkbox"]:disabled+label::after {
   fill: #cacaca;
 }
 
-.list-btn-active a path {
-  fill: #81b3d2;
-}
 .sort-list-btn a:hover path {
   fill: #3b3838;
-}
-
-.sort-list-btn a:focus path {
-  fill: #81b3d2;
 }
 
 .sort-list-btn a:active path {
@@ -1236,18 +1231,8 @@ input[type="checkbox"]:disabled+label::after {
   fill: #81b3d2;
 }
 
-.sort-list-name a:hover {
-  color: #81b3d2;
-}
-
-.sort-list-name a:focus {
-  color: #000000;
-  border-bottom: none;
-}
-
-.sort-list-name a:active {
-  color: #bad3e5;
-  border-bottom: none;
+.list-btn-active a path {
+  fill: #81b3d2;
 }
 
 /*---------------*/
@@ -1389,11 +1374,7 @@ input[type="checkbox"]:disabled+label::after {
   color: #81b3d2;
 }
 
-.catalog-item-title a:focus {
-  color: #cacaca;
-}
-
-.catalog-item-title a:active {
+ .catalog-item-title a:active {
   color: #cacaca;
 }
 
@@ -1410,7 +1391,7 @@ input[type="checkbox"]:disabled+label::after {
   background-color: #669ec0;
 }
 
-.button-read:focus {
+.button-read:active {
   color: #94b9d2;
   background-color: #5496bd;
 }
@@ -1424,7 +1405,7 @@ input[type="checkbox"]:disabled+label::after {
   background-color: #604e43;
 }
 
-.button-bookit:focus {
+.button-bookit:active {
   color: #928a85;
   background-color: #503e33;
 }
