@@ -454,9 +454,9 @@ a.active-menu {
 
 .text-decoration 
 .search-hotels {
+  width: 570px;     
   margin: 0;
   padding: 30px 138px;
-  width: 570px;   
   font: inherit;
   font-weight: 700;
   text-align: center;
