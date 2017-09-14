@@ -457,6 +457,7 @@ border:none
 
 .text-decoration .search-hotels:active {
 background-color:#503e33;
+color:rgba(255,255,255,0.3);
 border:none
 }
 
@@ -1030,7 +1031,7 @@ cursor:pointer
 }
 
 .range-toggle:hover {
-background:#1c4f80;
+background:#ababab;
 -webkit-transform:scale(1.1);
 -ms-transform:scale(1.1);
 transform:scale(1.1)
@@ -1342,7 +1343,7 @@ background-color:#669ec0
 }
 
 .button-read:active {
-color:#94b9d2;
+color:rgba(255,255,255,0.3);
 background-color:#5496bd
 }
 
@@ -1356,7 +1357,7 @@ background-color:#604e43
 }
 
 .button-bookit:active {
-color:#928a85;
+color:rgba(255,255,255,0.3);
 background-color:#503e33
 }
 
